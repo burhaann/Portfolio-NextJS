@@ -26,7 +26,7 @@ const projectsData = [
   {
     id: 3,
     title: "E-commerce Application",
-    description: "Proshop",
+    description: "Proshop Ecommerce Website using MERN and bootstrap.",
     image: "/images/projects/03.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/Ecommerce-Shop",
@@ -45,7 +45,8 @@ const projectsData = [
   {
     id: 5,
     title: "College Computer Lab Simulator",
-    description: "Computer Lab simulator of my College",
+    description:
+      "Computer Lab simulator of my College using Python like Language",
     image: "/images/projects/05.jpg",
     tag: ["All", "Desktop"],
     gitUrl:
@@ -56,7 +57,8 @@ const projectsData = [
   {
     id: 6,
     title: "3D Website using ThreeJS",
-    description: "Project 5 description",
+    description:
+      "Random Roofs generates a random 3D Model of a house everytime we visit it.",
     image: "/images/projects/06.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/Random-Roofs-3D-Website-Using-ThreeJS",
