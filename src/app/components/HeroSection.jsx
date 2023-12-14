@@ -17,7 +17,7 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-snug font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to bg-secondary-500">
-              Hello, I'm{" "}
+              Hello, I&apos;m{" "}
             </span>
             <br />
             <TypeAnimation
@@ -48,7 +48,7 @@ const HeroSection = () => {
             I am a versatile software developer with a comprehensive background
             in Mobile, Desktop, Web, and Game development, complemented by
             proficiency in 3D Visualization and Animation. Holding the title of
-            a Full Stack Developer and backed by a Master's degree in
+            a Full Stack Developer and backed by a Master&apos;s degree in
             Information Technology.
           </p>
           <div>

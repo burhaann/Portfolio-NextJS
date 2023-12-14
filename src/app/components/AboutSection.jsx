@@ -39,10 +39,12 @@ const TAB_DATA = [
         <li>Dr. AGMS Public Higher Secondary School</li> */}
         <li>SP College, Srinagar: Integration Information Technology Course</li>
         <li>
-          Cluster University: Bachelor's in Information Technology (2018-2021)
+          Cluster University: Bachelor&apos;s in Information Technology
+          (2018-2021)
         </li>
         <li>
-          Cluster University: Master's in Information Technology (2021-2024)
+          Cluster University: Master&apos;s in Information Technology
+          (2021-2024)
         </li>
       </ul>
     ),
@@ -87,7 +89,7 @@ const AboutSection = () => {
             I am a software developer with experience in Mobile, Desktop, Web
             and Game development. I also have a good hold on 3D Visualization
             and Animation. Additionally, I hold the designation of a Full Stack
-            Developer and have earned a Master's degree in Information
+            Developer and have earned a Master&apos;s degree in Information
             Technology, further solidifying my qualifications and commitment to
             advancing within the field. Moreover, I bring a strong command of
             Data Structures and Algorithms also.
