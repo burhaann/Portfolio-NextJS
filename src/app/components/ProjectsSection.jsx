@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "NextJs Portfolio Website",
     description: "This website",
-    image: "/images/projects/1.png",
+    image: "/images/projects/01.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/Portfolio/",
     previewUrl: "https://burhaann.vercel.app",

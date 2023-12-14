@@ -84,9 +84,13 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base md:text-lg">
-            I am a software engineer with a passion for building beautiful and
-            intuitive applications. I have a background in computer science and
-            a passion for building beautiful and intuitive applications.
+            I am a software developer with experience in Mobile, Desktop, Web
+            and Game development. I also have a good hold on 3D Visualization
+            and Animation. Additionally, I hold the designation of a Full Stack
+            Developer and have earned a Master's degree in Information
+            Technology, further solidifying my qualifications and commitment to
+            advancing within the field. Moreover, I bring a strong command of
+            Data Structures and Algorithms also.
           </p>
           <div className="flex flex-row mt-8">
             <TabButton
