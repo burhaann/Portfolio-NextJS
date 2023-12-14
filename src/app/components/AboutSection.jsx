@@ -16,19 +16,17 @@ const TAB_DATA = [
         <li>Redux</li>
         <li>NextJS</li>
         <li>Flutter</li>
-        <li>GatsbyJS</li>
-        <li>GraphQL</li>
         <li>NodeJS</li>
         <li>ExpressJS</li>
         <li>MongoDB</li>
         <li>Mongoose</li>
-        <li>PostgreSQL</li>
         <li>MySQL</li>
         <li>AWS</li>
         <li>Firebase</li>
         <li>Git</li>
         <li>Github</li>
-        <li>Heroku</li>
+        <li>Render</li>
+        <li>Cyclic</li>
       </ul>
     ),
   },
@@ -37,9 +35,9 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>New Convent High School</li>
-        <li>Dr. AGMS Public Higher Secondary School</li>
-        <li>SP College, Srinagar: Integration Information Technology</li>
+        {/* <li>New Convent High School</li>
+        <li>Dr. AGMS Public Higher Secondary School</li> */}
+        <li>SP College, Srinagar: Integration Information Technology Course</li>
         <li>
           Cluster University: Bachelor's in Information Technology (2018-2021)
         </li>
@@ -58,6 +56,8 @@ const TAB_DATA = [
         <li>3D Animation</li>
         <li>CCNA from NIELET</li>
         <li>ReactJS and SpringBoot bootcamp from Marval Minds</li>
+        <li>Ecommerce website using MERN Stack</li>
+        <li>Back End Development and APIs: FreeCodeCamp Certified</li>
       </ul>
     ),
   },

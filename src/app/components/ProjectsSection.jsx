@@ -7,57 +7,116 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "NextJs Portfolio Website",
+    description: "This website",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/burhaann/Portfolio/",
+    previewUrl: "https://burhaann.vercel.app",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
+    title: "Promptopia",
+    description: "Discover and Share Ai Prompts",
+    image: "/images/projects/02.jpg",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/burhaann/promptopia/",
+    previewUrl: "https://promptopia-gules-six.vercel.app/",
   },
   {
     id: 3,
     title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    description: "Proshop",
+    image: "/images/projects/03.jpg",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/burhaann/Ecommerce-Shop",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
+    title: "Basic College Flutter App",
+    description: "Homepage of my College's App",
+    image: "/images/projects/04.jpg",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/burhaann/College-Basic-Flutter-App",
+    previewUrl:
+      "https://drive.google.com/file/d/1ViJLXLJg0QjlTbzmlhJ2syZv9POFu6v3",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "College Computer Lab Simulator",
+    description: "Computer Lab simulator of my College",
+    image: "/images/projects/05.jpg",
+    tag: ["All", "Desktop"],
+    gitUrl:
+      "https://github.com/burhaann/College-6th-Semester-Minor-Project-3D-Computer-Lab-Simulator",
+    previewUrl:
+      "https://drive.google.com/drive/folders/1shC2Rr1w1B_elSw2q3_F4pNmYxTLYk37",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
+    title: "3D Website using ThreeJS",
     description: "Project 5 description",
-    image: "/images/projects/6.png",
+    image: "/images/projects/06.jpg",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/burhaann/Random-Roofs-3D-Website-Using-ThreeJS",
+    previewUrl: "http://randomroofs.netlify.app/",
+  },
+  {
+    id: 7,
+    title: "MongoDB and Mongoose",
+    description: "Connecting to MongoDB and performing various operations.",
+    image: "/images/projects/07.jpg",
+    tag: ["All", "Web", "Microservices"],
+    gitUrl:
+      "https://github.com/burhaann/boilerplate-mongo---MongoDB-and-Mongoose",
     previewUrl: "/",
+  },
+  {
+    id: 8,
+    title: "URL Shortener",
+    description:
+      "Shorten your long urls for free and keep them easy to remember.",
+    image: "/images/projects/08.jpg",
+    tag: ["All", "Web", "Microservices"],
+    gitUrl: "https://github.com/burhaann/URL-Shortner",
+    previewUrl: "https://url-shortner-rplc.onrender.com/",
+  },
+  {
+    id: 9,
+    title: "Exercise Tracker",
+    description: "Track you daily exercise and keep a log of them.",
+    image: "/images/projects/09.jpg",
+    tag: ["All", "Web", "Microservices"],
+    gitUrl: "https://github.com/burhaann/Exercise-Tracker-Microservice-FCC",
+    previewUrl: "https://exercise-tracker-microservice-fcc.onrender.com/",
+  },
+  {
+    id: 10,
+    title: "File Metadata",
+    description: "Upload a file and get its metadata.",
+    image: "/images/projects/10.jpg",
+    tag: ["All", "Web", "Microservices"],
+    gitUrl: "https://github.com/burhaann/File-Metadata-Microservice",
+    previewUrl: "https://file-metadata-microservice-yin4.onrender.com/",
+  },
+  {
+    id: 11,
+    title: "Request Header Parser",
+    description: "Get the header data of any request.",
+    image: "/images/projects/11.jpg",
+    tag: ["All", "Web", "Microservices"],
+    gitUrl: "https://github.com/burhaann/Request-Header-Parser-Microservice",
+    previewUrl: "https://request-header-parser-microservice-9sn2.onrender.com/",
+  },
+  {
+    id: 12,
+    title: "TImestamp Microservice",
+    description: "Write any date in the url and get its proper timestamp.",
+    image: "/images/projects/12.jpg",
+    tag: ["All", "Web", "Microservices"],
+    gitUrl: "https://github.com/burhaann/Timestamp-Microservice",
+    previewUrl: "https://timestamp-microservice-5x69.onrender.com/",
   },
 ];
 
@@ -84,7 +143,7 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-white flex flex-row flex-wrap justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -99,6 +158,16 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Microservices"
+          isSelected={tag === "Microservices"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Desktop"
+          isSelected={tag === "Desktop"}
         />
       </div>
       <ul

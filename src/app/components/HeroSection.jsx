@@ -35,8 +35,6 @@ const HeroSection = () => {
                 1000,
                 "Graphics Designer",
                 1000,
-                "UI/UX Designer",
-                1000,
                 "Burhan Ahmad Beigh",
                 1000,
               ]}
@@ -47,9 +45,13 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
-            Equipped with a solid foundation in developing Software and Web
-            applications, complemented by a profound expertise in 3D
-            visualization and animation.
+            I am a software developer with experience in Mobile, Desktop, Web
+            and Game development. I also have a good hold on 3D Visualization
+            and Animation. Additionally, I hold the designation of a Full Stack
+            Developer and have earned a Master's degree in Information
+            Technology, further solidifying my qualifications and commitment to
+            advancing within the field. Moreover, I bring a strong command of
+            Data Structures and Algorithms also.
           </p>
           <div>
             <Link href="https://www.linkedin.com/in/burhaann">
@@ -57,7 +59,7 @@ const HeroSection = () => {
                 Hire Me
               </button>
             </Link>
-            <Link href="https://drive.google.com/uc?export=download&id=1u0LKDaAsLqE3S9nXkzN2cB8GZ5yENoJD">
+            <Link href="https://drive.google.com/uc?export=download&id=1vlEkfEM0efWvYwrHQBiTWiqyqtnhOiTL">
               <button className="px-1 py-1 sm:w-fit rounded-full mr-4 mt-3 bg-gradient-to-br from-blue-500  via-primary-500 to-secondary-500 hover:bg-slate-800 text-white">
                 <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                   Download CV
