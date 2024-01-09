@@ -46,6 +46,12 @@ const TAB_DATA = [
           Cluster University: Master&apos;s in Information Technology
           (2021-2024)
         </li>
+        <li>
+          Cisco Certified Network Associate (CCNA):
+          <br /> from National Institute Of Electronics & Information Technology
+          (NIELIT)
+        </li>
+        <li>Scrimba: ReactJS Bootcamp with 4 Projects!</li>
       </ul>
     ),
   },
@@ -56,13 +62,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>3D Modelling</li>
         <li>3D Animation</li>
-        <li>
-          Cisco Certified Network Associate (CCNA):
-          <br /> from National Institute Of Electronics & Information Technology
-          (NIELIT)
-        </li>
         <li>ReactJS Bootcamp from Marval Minds</li>
-        <li>Scrimba: ReactJS Bootcamp with 4 Projects!</li>
         <li>
           Ecommerce Platform with Admin Dashboard built using MERN Stack,
           Bootstrap and Redux toolkit!
@@ -127,7 +127,7 @@ const AboutSection = () => {
               active={tab === "experience"}
             >
               {" "}
-              Work Experience{" "}
+              Experience{" "}
             </TabButton>
           </div>
           <div className="mt-8">
