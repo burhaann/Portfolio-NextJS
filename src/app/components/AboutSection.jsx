@@ -56,10 +56,23 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>3D Modelling</li>
         <li>3D Animation</li>
-        <li>CCNA from NIELET</li>
-        <li>ReactJS and SpringBoot bootcamp from Marval Minds</li>
-        <li>Ecommerce website using MERN Stack</li>
+        <li>
+          Cisco Certified Network Associate (CCNA):
+          <br /> from National Institute Of Electronics & Information Technology
+          (NIELIT)
+        </li>
+        <li>ReactJS Bootcamp from Marval Minds</li>
+        <li>Scrimba: ReactJS Bootcamp with 4 Projects!</li>
+        <li>
+          Ecommerce Platform with Admin Dashboard built using MERN Stack,
+          Bootstrap and Redux toolkit!
+        </li>
         <li>Back End Development and APIs: FreeCodeCamp Certified</li>
+        <li>
+          JavaScript Algorithms and Data Structures: FreeCodeCamp Certified
+        </li>
+        <li>Responsive Web Design: FreeCodeCamp Certified</li>
+        <li>100x Devs Cohort 2.0: MERN, System Design, Basic DevOps</li>
       </ul>
     ),
   },
@@ -114,7 +127,7 @@ const AboutSection = () => {
               active={tab === "experience"}
             >
               {" "}
-              Experience{" "}
+              Work Experience{" "}
             </TabButton>
           </div>
           <div className="mt-8">
