@@ -8,7 +8,8 @@ const projectsData = [
   {
     id: 1,
     title: "NextJs Portfolio Website",
-    description: "This website",
+    description:
+      "This Portfolio website built with NextJS, TailwindCSS and EmailJS",
     image: "/images/projects/01.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/Portfolio/",
@@ -17,7 +18,8 @@ const projectsData = [
   {
     id: 2,
     title: "Promptopia",
-    description: "Discover and Share Ai Prompts",
+    description:
+      "Discover and Share Ai Prompts. MongoDB Atlas CRUD App with O Auth 2.0 Authentication!",
     image: "/images/projects/02.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/promptopia/",
@@ -25,12 +27,13 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Proshop Ecommerce Website using MERN and bootstrap.",
+    title: "E-Commerce Application",
+    description:
+      "ProShop, an E-Commerce platform with Admin Dashboard built using MERN Stack, Bootstrap and Redux toolkit!",
     image: "/images/projects/03.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/Ecommerce-Shop",
-    previewUrl: "/",
+    previewUrl: "https://proshopdemo.dev/",
   },
   {
     id: 4,
@@ -44,9 +47,9 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "College Computer Lab Simulator",
+    title: "3D Computer Lab Simulator",
     description:
-      "Computer Lab simulator of my College using Python like Language",
+      "Minor College Project: 3D Computer Lab simulator of my College's Lab II using a Python like Language",
     image: "/images/projects/05.jpg",
     tag: ["All", "Desktop"],
     gitUrl:
