@@ -51,6 +51,7 @@ const TAB_DATA = [
           <br /> from National Institute Of Electronics & Information Technology
           (NIELIT)
         </li>
+        <li>ReactJS Bootcamp from Marval Minds</li>
         <li>Scrimba: ReactJS Bootcamp with 4 Projects!</li>
       </ul>
     ),
@@ -62,7 +63,6 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>3D Modelling</li>
         <li>3D Animation</li>
-        <li>ReactJS Bootcamp from Marval Minds</li>
         <li>
           Ecommerce Platform with Admin Dashboard built using MERN Stack,
           Bootstrap and Redux toolkit!
