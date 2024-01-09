@@ -37,14 +37,14 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         {/* <li>New Convent High School</li>
         <li>Dr. AGMS Public Higher Secondary School</li> */}
-        <li>SP College, Srinagar: Integration Information Technology Course</li>
+        {/* <li>SP College, Srinagar: Integration Information Technology Course</li> */}
         <li>
-          Cluster University: Bachelor&apos;s in Information Technology
-          (2018-2021)
+          Cluster University, Srinagar:
+          <br /> Bachelor&apos;s in Information Technology (2018-2021)
         </li>
         <li>
-          Cluster University: Master&apos;s in Information Technology
-          (2021-2024)
+          Cluster University, Srinagar:
+          <br /> Master&apos;s in Information Technology (2021-2024)
         </li>
         <li>
           Cisco Certified Network Associate (CCNA):
