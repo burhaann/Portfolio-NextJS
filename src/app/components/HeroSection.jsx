@@ -41,9 +41,9 @@ const HeroSection = () => {
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
             I am a versatile software developer with a comprehensive background
             in Mobile, Desktop, Web, and Game development, complemented by
-            proficiency in 3D Visualization and Animation. Holding the title of
-            a Full Stack Developer and backed by a Master&apos;s degree in
-            Information Technology.
+            proficiency in 3D Visualization and Animation. I am actively
+            pursuing the path to become a proficient full-stack developer,
+            backed by a Master&apos;s degree in Information Technology.
           </p>
           <div>
             <Link href="https://www.linkedin.com/in/burhaann">

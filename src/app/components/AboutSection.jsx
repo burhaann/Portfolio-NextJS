@@ -25,8 +25,6 @@ const TAB_DATA = [
         <li>Firebase</li>
         <li>Git</li>
         <li>Github</li>
-        <li>Render</li>
-        <li>Cyclic</li>
       </ul>
     ),
   },
@@ -72,6 +70,7 @@ const TAB_DATA = [
           JavaScript Algorithms and Data Structures: FreeCodeCamp Certified
         </li>
         <li>Responsive Web Design: FreeCodeCamp Certified</li>
+        <li>Front End Development Libraries: FreeCodeCamp Certified</li>
         <li>100x Devs Cohort 2.0: MERN, System Design, Basic DevOps</li>
       </ul>
     ),
@@ -101,11 +100,14 @@ const AboutSection = () => {
           <p className="text-base md:text-lg">
             I am a software developer with experience in Mobile, Desktop, Web
             and Game development. I also have a good hold on 3D Visualization
-            and Animation. Additionally, I hold the designation of a Full Stack
-            Developer and have earned a Master&apos;s degree in Information
-            Technology, further solidifying my qualifications and commitment to
-            advancing within the field. Moreover, I bring a strong command of
-            Data Structures and Algorithms also.
+            and Animation. Additionally, I am actively dedicated to advancing my
+            skills and expertise with the aim of becoming a proficient
+            <span className="font-bold"> full-stack developer </span>and have
+            earned a Master&apos;s degree in Information Technology, further
+            solidifying my qualifications and commitment to advancing within the
+            field. Moreover, I am actively strengthening my understanding of
+            data structures and algorithms as part of my ongoing learning
+            journey.
           </p>
           <div className="flex flex-row mt-8">
             <TabButton
