@@ -42,8 +42,9 @@ const HeroSection = () => {
             I am a versatile software developer with a comprehensive background
             in Mobile, Desktop, Web, and Game development, complemented by
             proficiency in 3D Visualization and Animation. I am actively
-            pursuing the path to become a proficient full-stack developer,
-            backed by a Master&apos;s degree in Information Technology.
+            pursuing the path to become a proficient{" "}
+            <span className="font-bold"> full-stack developer</span>, backed by
+            a Master&apos;s degree in Information Technology.
           </p>
           <div>
             <Link href="https://www.linkedin.com/in/burhaann">
