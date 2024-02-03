@@ -90,7 +90,7 @@ const projectsData = [
   {
     id: 9,
     title: "Exercise Tracker",
-    description: "Track you daily exercise and keep a log of them.",
+    description: "Track your daily exercise and keep a log of them.",
     image: "/images/projects/09.jpg",
     tag: ["All", "Web", "Microservices"],
     gitUrl: "https://github.com/burhaann/Exercise-Tracker-Microservice-FCC",
@@ -122,6 +122,53 @@ const projectsData = [
     tag: ["All", "Web", "Microservices"],
     gitUrl: "https://github.com/burhaann/Timestamp-Microservice",
     previewUrl: "https://timestamp-microservice-5x69.onrender.com/",
+  },
+  {
+    id: 13,
+    title: "Responsive Web Design",
+    description:
+      "Responsive Web Design: FreeCodeCamp Certified: 20 Projects in total!",
+    image: "/images/projects/13.jpg",
+    tag: ["All", "Web", "Microservices"],
+    gitUrl: "https://github.com/burhaann/Freecodecamp-Responsive-Web-Design",
+    previewUrl: "https://responsive-webdesign-fcc.netlify.app/",
+  },
+  {
+    id: 14,
+    title: "Meme Generator",
+    description: "Basic Meme Generator using React from Scrimba Course.",
+    image: "/images/projects/14.jpg",
+    tag: ["All", "Web", "Microservices"],
+    gitUrl: "https://github.com/burhaann/Scrimba-React-Meme-Generator",
+    previewUrl: "https://react-meme-generator-scrimba.netlify.app/",
+  },
+  {
+    id: 15,
+    title: "Fullstack NextJS Blog",
+    description: "Fullstack NextJS Blog, with proper Authentication.",
+    image: "/images/projects/15.jpg",
+    tag: ["All", "Web", "Microservices"],
+    gitUrl: "https://github.com/burhaann/Fullstack-Blog-NextJS",
+    previewUrl: "https://fullstack-blog-next-js.vercel.app/",
+  },
+  {
+    id: 16,
+    title: "50 Projects in 50 Days: HTML, CSS, JavaScript",
+    description:
+      "Brad Traversy: 50 Projects In 50 Days Course - HTML, CSS & JavaScript.",
+    image: "/images/projects/16.jpg",
+    tag: ["All", "Web", "Microservices"],
+    gitUrl: "https://github.com/burhaann/50Projects-50Days-HTML-CSS-Javascript",
+    previewUrl: "https://50projects-html-css-js.netlify.app/",
+  },
+  {
+    id: 17,
+    title: "AirBNB Clone",
+    description: "Basic AirBNB Clone using React from Scrimba Course",
+    image: "/images/projects/17.jpg",
+    tag: ["All", "Web", "Microservices"],
+    gitUrl: "https://github.com/burhaann/Scrimba-React-Airbnb-Clone",
+    previewUrl: "https://react-airbnb-clone-scrimba.netlify.app/",
   },
 ];
 
