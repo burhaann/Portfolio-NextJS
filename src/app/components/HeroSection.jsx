@@ -49,7 +49,7 @@ const HeroSection = () => {
           <div>
             <Link href="https://www.linkedin.com/in/burhaann">
               <button className="px-6 py-3 sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 text-white hover:bg-slate-200">
-                Hire Me
+                LinkedIn
               </button>
             </Link>
             <Link href="https://drive.google.com/uc?export=download&id=1vlEkfEM0efWvYwrHQBiTWiqyqtnhOiTL">

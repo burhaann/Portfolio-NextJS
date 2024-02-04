@@ -129,7 +129,7 @@ const AboutSection = () => {
               active={tab === "experience"}
             >
               {" "}
-              Experience{" "}
+              Courses{" "}
             </TabButton>
           </div>
           <div className="mt-8">
