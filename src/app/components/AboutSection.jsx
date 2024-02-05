@@ -63,6 +63,10 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>3D Modelling</li>
         <li>3D Animation</li>
+        <li>
+          Ecommerce Platform with Admin Dashboard built using MERN Stack,
+          Bootstrap and Redux toolkit!
+        </li>
         <li>100x Devs Cohort 2.0: MERN, System Design, Basic DevOps</li>
         <li>
           Dr. Angela Yu: The Complete Flutter Development Bootcamp with Dart
