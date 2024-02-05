@@ -63,17 +63,17 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>3D Modelling</li>
         <li>3D Animation</li>
+        <li>100x Devs Cohort 2.0: MERN, System Design, Basic DevOps</li>
         <li>
-          Ecommerce Platform with Admin Dashboard built using MERN Stack,
-          Bootstrap and Redux toolkit!
+          Dr. Angela Yu: The Complete Flutter Development Bootcamp with Dart
         </li>
+        <li>Brad Traversy: 50 Projects In 50 Days - HTML, CSS & JavaScript</li>
         <li>Back End Development and APIs: FreeCodeCamp Certified</li>
         <li>
           JavaScript Algorithms and Data Structures: FreeCodeCamp Certified
         </li>
         <li>Responsive Web Design: FreeCodeCamp Certified</li>
         <li>Front End Development Libraries: FreeCodeCamp Certified</li>
-        <li>100x Devs Cohort 2.0: MERN, System Design, Basic DevOps</li>
       </ul>
     ),
   },
