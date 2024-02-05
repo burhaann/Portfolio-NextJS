@@ -38,11 +38,13 @@ const TAB_DATA = [
         {/* <li>SP College, Srinagar: Integration Information Technology Course</li> */}
         <li>
           Cluster University, Srinagar:
-          <br /> Bachelor&apos;s in Information Technology (2018-2021)
+          <br /> <span className="font-bold">Bachelor&apos;s</span> in
+          Information Technology (2018-2021)
         </li>
         <li>
           Cluster University, Srinagar:
-          <br /> Master&apos;s in Information Technology (2021-2024)
+          <br /> <span className="font-bold">Master&apos;s</span> in Information
+          Technology (2021-2024)
         </li>
         <li>
           Cisco Certified Network Associate (CCNA):
