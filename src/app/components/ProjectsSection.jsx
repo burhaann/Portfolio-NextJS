@@ -174,7 +174,7 @@ const projectsData = [
     id: 18,
     title: "Front End Development Libraries",
     description:
-      "Five Certification Projects, which included lessons from Bootstrap, SASS, jQuery, React and Redux.",
+      "5 Certification Projects, which included lessons from Bootstrap, SASS, jQuery, React and Redux.",
     image: "/images/projects/18.jpg",
     tag: ["All", "Web"],
     gitUrl:
