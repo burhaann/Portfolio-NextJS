@@ -164,11 +164,22 @@ const projectsData = [
   {
     id: 17,
     title: "AirBNB Clone",
-    description: "Basic AirBNB Clone using React from Scrimba Course",
+    description: "Basic AirBNB Homepage Clone using React from Scrimba Course",
     image: "/images/projects/17.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/Scrimba-React-Airbnb-Clone",
     previewUrl: "https://react-airbnb-clone-scrimba.netlify.app/",
+  },
+  {
+    id: 18,
+    title: "Front End Development Libraries",
+    description:
+      "Five Certification Projects, which included lessons from Bootstrap, SASS, jQuery, React and Redux.",
+    image: "/images/projects/18.jpg",
+    tag: ["All", "Web"],
+    gitUrl:
+      "https://github.com/burhaann/Freecodecamp-Front-End-Development-Libraries",
+    previewUrl: "https://front-end-development.netlify.app",
   },
 ];
 
