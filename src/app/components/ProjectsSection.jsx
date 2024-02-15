@@ -33,7 +33,7 @@ const projectsData = [
     image: "/images/projects/03.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/Ecommerce-Shop",
-    previewUrl: "https://proshopdemo.dev/",
+    previewUrl: "https://proshop-vcso.onrender.com",
   },
   {
     id: 4,
