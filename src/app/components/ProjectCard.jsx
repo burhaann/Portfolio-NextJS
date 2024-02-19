@@ -75,7 +75,7 @@ const ProjectCard = ({
               console.log(randomColor);
               return (
                 <div
-                  className={`bg-transparent hover:bg-blue-500 text-white-900 text-sm hover:text-white py-1 px-2 border   hover:border-transparent rounded-md mt-2 mr-1 inline-block  bg-[#14131a]`}
+                  className={`bg-transparent hover:bg-blue-500 text-white-900 text-sm hover:text-white py-1 px-2 border-2   hover:border-transparent rounded-md mt-2 mr-1 inline-block  bg-[#14131a]`}
                   style={{ borderColor: randomColor }}
                   key={index}
                 >

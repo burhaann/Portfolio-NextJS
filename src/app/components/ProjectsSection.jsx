@@ -210,6 +210,17 @@ const projectsData = [
     gitUrl: "https://github.com/burhaann/Scrimba-React-Markdown-Notes-App",
     previewUrl: "https://notes-using-firebase.netlify.app/",
   },
+  {
+    id: 20,
+    title: "React Tenzies Game",
+    description:
+      "Tenzies is a fast-paced dice game where players aim to roll all ten of their dice to the same number as quickly as possible.",
+    image: "/images/projects/20.jpg",
+    stack: ["ReactJS", "Javascript"],
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/burhaann/Scrimba-React-Tenzies-Game",
+    previewUrl: "https://tenzies-game-using-react-18.netlify.app/",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -272,7 +283,7 @@ const ProjectsSection = () => {
             variants={cardVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.2, delay: index * 0.2 }}
+            transition={{ duration: 0.2, delay: index * 0.3 }}
           >
             <ProjectCard
               key={project.id}
