@@ -2,7 +2,46 @@ import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+const ProjectCard = ({
+  imgUrl,
+  title,
+  description,
+  stack,
+  gitUrl,
+  previewUrl,
+}) => {
+  const getRandomColor = () => {
+    // Generate random RGB values
+    const randomR = Math.floor(Math.random() * 256);
+    const randomG = Math.floor(Math.random() * 256);
+    const randomB = Math.floor(Math.random() * 256);
+
+    // Construct the RGB color string
+    return `rgb(${randomR}, ${randomG}, ${randomB})`;
+  };
+  // const getRandomColor = () => {
+  //   const colors = [
+  //     "red",
+  //     "orange",
+  //     "amber",
+  //     "yellow",
+  //     "lime",
+  //     "green",
+  //     "emerald",
+  //     "teal",
+  //     "cyan",
+  //     "sky",
+  //     "blue",
+  //     "indigo",
+  //     "violet",
+  //     "purple",
+  //     "fuchsia",
+  //     "pink",
+  //     "rose",
+  //   ]; // Tailwind CSS color palette
+  //   const randomIndex = Math.floor(Math.random() * colors.length);
+  //   return `border-${colors[randomIndex]}-600`; // Construct the Tailwind CSS class
+  // };
   return (
     <div>
       <div
@@ -28,9 +67,27 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           </Link>
         </div>
       </div>
-      <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
-        <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE]">{description}</p>
+      <div className="bg-[#1c1b23]">
+        <div className="flex flex-wrap justify-center pt-2">
+          {stack &&
+            stack.map((item, index) => {
+              const randomColor = getRandomColor();
+              console.log(randomColor);
+              return (
+                <div
+                  className={`bg-transparent hover:bg-blue-500 text-white-900 text-sm hover:text-white py-1 px-2 border   hover:border-transparent rounded-md mt-2 mr-1 inline-block  bg-[#14131a]`}
+                  style={{ borderColor: randomColor }}
+                  key={index}
+                >
+                  <em>{item}</em>
+                </div>
+              );
+            })}
+        </div>
+        <div className="text-white rounded-b-xl py-4 px-4">
+          <h5 className="text-xl font-semibold mb-2">{title}</h5>
+          <p className="text-[#ADB7BE]">{description}</p>
+        </div>
       </div>
     </div>
   );

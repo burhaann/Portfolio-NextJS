@@ -11,6 +11,7 @@ const projectsData = [
     description:
       "This Portfolio website built with NextJS, TailwindCSS and EmailJS",
     image: "/images/projects/01.jpg",
+    stack: ["NextJS", "TailwindCSS", "Framer-Motion"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/Portfolio/",
     previewUrl: "https://burhaann.vercel.app",
@@ -21,6 +22,7 @@ const projectsData = [
     description:
       "Discover and Share Ai Prompts. MongoDB Atlas CRUD App with O Auth 2.0 Authentication!",
     image: "/images/projects/02.jpg",
+    stack: ["NextJS", "MongoDB", "TailwindCSS"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/promptopia/",
     previewUrl: "https://promptopia-gules-six.vercel.app/",
@@ -31,6 +33,7 @@ const projectsData = [
     description:
       "ProShop, an E-Commerce platform with Admin Dashboard built using MERN Stack, Bootstrap and Redux toolkit!",
     image: "/images/projects/03.jpg",
+    stack: ["MERN", "Bootstrap", "Redux Toolkit"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/Ecommerce-Shop",
     previewUrl: "https://proshop-vcso.onrender.com",
@@ -40,6 +43,7 @@ const projectsData = [
     title: "Basic College Flutter App",
     description: "Homepage of my College's App",
     image: "/images/projects/04.jpg",
+    stack: ["Flutter", "Material Ui", "Firebase"],
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/burhaann/College-Basic-Flutter-App",
     previewUrl:
@@ -51,6 +55,7 @@ const projectsData = [
     description:
       "Minor College Project: 3D Computer Lab simulator of my College's Lab II using a Python like Language",
     image: "/images/projects/05.jpg",
+    stack: ["Godot", "Blender", "Armory"],
     tag: ["All", "Desktop"],
     gitUrl:
       "https://github.com/burhaann/College-6th-Semester-Minor-Project-3D-Computer-Lab-Simulator",
@@ -63,6 +68,7 @@ const projectsData = [
     description:
       "Random Roofs generates a random 3D Model of a house everytime we visit it.",
     image: "/images/projects/06.jpg",
+    stack: ["ThreeJS", "Blender"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/Random-Roofs-3D-Website-Using-ThreeJS",
     previewUrl: "http://randomroofs.netlify.app/",
@@ -72,6 +78,7 @@ const projectsData = [
     title: "MongoDB and Mongoose",
     description: "Connecting to MongoDB and performing various operations.",
     image: "/images/projects/07.jpg",
+    stack: ["NodeJS", "ExpressJS", "MongoDB"],
     tag: ["All", "Microservices"],
     gitUrl:
       "https://github.com/burhaann/boilerplate-mongo---MongoDB-and-Mongoose",
@@ -83,6 +90,7 @@ const projectsData = [
     description:
       "Shorten your long urls for free and keep them easy to remember.",
     image: "/images/projects/08.jpg",
+    stack: ["NodeJS", "ExpressJS", "MongoDB"],
     tag: ["All", "Microservices"],
     gitUrl: "https://github.com/burhaann/URL-Shortner",
     previewUrl: "https://url-shortner-rplc.onrender.com/",
@@ -92,6 +100,7 @@ const projectsData = [
     title: "Exercise Tracker",
     description: "Track your daily exercise and keep a log of them.",
     image: "/images/projects/09.jpg",
+    stack: ["NodeJS", "ExpressJS", "MongoDB"],
     tag: ["All", "Microservices"],
     gitUrl: "https://github.com/burhaann/Exercise-Tracker-Microservice-FCC",
     previewUrl: "https://exercise-tracker-microservice-fcc.onrender.com/",
@@ -101,6 +110,7 @@ const projectsData = [
     title: "File Metadata",
     description: "Upload a file and get its metadata.",
     image: "/images/projects/10.jpg",
+    stack: ["NodeJS", "ExpressJS", "Multer"],
     tag: ["All", "Microservices"],
     gitUrl: "https://github.com/burhaann/File-Metadata-Microservice",
     previewUrl: "https://file-metadata-microservice-yin4.onrender.com/",
@@ -110,6 +120,7 @@ const projectsData = [
     title: "Request Header Parser",
     description: "Get the header data of any request.",
     image: "/images/projects/11.jpg",
+    stack: ["NodeJS", "ExpressJS"],
     tag: ["All", "Microservices"],
     gitUrl: "https://github.com/burhaann/Request-Header-Parser-Microservice",
     previewUrl: "https://request-header-parser-microservice-9sn2.onrender.com/",
@@ -119,6 +130,7 @@ const projectsData = [
     title: "TImestamp Microservice",
     description: "Write any date in the url and get its proper timestamp.",
     image: "/images/projects/12.jpg",
+    stack: ["NodeJS", "ExpressJS"],
     tag: ["All", "Microservices"],
     gitUrl: "https://github.com/burhaann/Timestamp-Microservice",
     previewUrl: "https://timestamp-microservice-5x69.onrender.com/",
@@ -129,6 +141,7 @@ const projectsData = [
     description:
       "Responsive Web Design: FreeCodeCamp Certified: 20 Projects in total!",
     image: "/images/projects/13.jpg",
+    stack: ["HTML", "CSS"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/Freecodecamp-Responsive-Web-Design",
     previewUrl: "https://responsive-webdesign-fcc.netlify.app/",
@@ -138,6 +151,7 @@ const projectsData = [
     title: "Meme Generator",
     description: "Basic Meme Generator using React from Scrimba Course.",
     image: "/images/projects/14.jpg",
+    stack: ["ReactJS", "JavaScript"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/Scrimba-React-Meme-Generator",
     previewUrl: "https://react-meme-generator-scrimba.netlify.app/",
@@ -147,6 +161,7 @@ const projectsData = [
     title: "Fullstack NextJS Blog",
     description: "Fullstack NextJS Blog, with proper Authentication.",
     image: "/images/projects/15.jpg",
+    stack: ["NextJS", "MongoDB"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/Fullstack-Blog-NextJS",
     previewUrl: "https://fullstack-blog-next-js.vercel.app/",
@@ -157,6 +172,7 @@ const projectsData = [
     description:
       "Brad Traversy: 50 Projects In 50 Days Course - HTML, CSS & JavaScript.",
     image: "/images/projects/16.jpg",
+    stack: ["HTML", "CSS", "JavaScript"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/50Projects-50Days-HTML-CSS-Javascript",
     previewUrl: "https://50projects-html-css-js.netlify.app/",
@@ -166,6 +182,7 @@ const projectsData = [
     title: "AirBNB Clone",
     description: "Basic AirBNB Homepage Clone using React from Scrimba Course",
     image: "/images/projects/17.jpg",
+    stack: ["ReactJS", "Javascript"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/burhaann/Scrimba-React-Airbnb-Clone",
     previewUrl: "https://react-airbnb-clone-scrimba.netlify.app/",
@@ -176,10 +193,22 @@ const projectsData = [
     description:
       "5 Certification Projects, which included lessons from Bootstrap, SASS, jQuery, React and Redux.",
     image: "/images/projects/18.jpg",
+    stack: ["ReactJS", "Bootstrap", "jQuery"],
     tag: ["All", "Web"],
     gitUrl:
       "https://github.com/burhaann/Freecodecamp-Front-End-Development-Libraries",
     previewUrl: "https://front-end-development.netlify.app",
+  },
+  {
+    id: 19,
+    title: "React Markdown Notes App",
+    description:
+      "React Markdown Notes app using firebase for storage from Scrimba React Course",
+    image: "/images/projects/19.jpg",
+    stack: ["ReactJS", "Javascript", "Firebase"],
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/burhaann/Scrimba-React-Markdown-Notes-App",
+    previewUrl: "https://notes-using-firebase.netlify.app/",
   },
 ];
 
@@ -243,13 +272,14 @@ const ProjectsSection = () => {
             variants={cardVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
+            transition={{ duration: 0.2, delay: index * 0.2 }}
           >
             <ProjectCard
               key={project.id}
               imgUrl={project.image}
               title={project.title}
               description={project.description}
+              stack={project.stack}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
             />
