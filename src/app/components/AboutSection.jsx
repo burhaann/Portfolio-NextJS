@@ -46,13 +46,12 @@ const TAB_DATA = [
           <br /> <span className="font-bold">Master&apos;s</span> in Information
           Technology (2021-2024)
         </li>
+        <br />
         <li>
           Cisco Certified Network Associate (CCNA):
           <br /> from National Institute Of Electronics & Information Technology
           (NIELIT)
         </li>
-        <li>ReactJS Bootcamp from Marval Minds</li>
-        <li>Scrimba: ReactJS Bootcamp with 4 Projects!</li>
       </ul>
     ),
   },
@@ -63,20 +62,24 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>3D Modelling</li>
         <li>3D Animation</li>
-        <li>
-          Ecommerce Platform with Admin Dashboard built using MERN Stack,
-          Bootstrap and Redux toolkit!
-        </li>
+        <br />
+
         <li>
           Dr. Angela Yu: The Complete Flutter Development Bootcamp with Dart
         </li>
+        <br />
+        <li>ReactJS Bootcamp from Marval Minds</li>
+        <li>Scrimba: ReactJS Bootcamp with 4 Projects!</li>
         <li>Brad Traversy: 50 Projects In 50 Days - HTML, CSS & JavaScript</li>
+        <br />
+
         <li>Back End Development and APIs: FreeCodeCamp Certified</li>
         <li>
           JavaScript Algorithms and Data Structures: FreeCodeCamp Certified
         </li>
         <li>Responsive Web Design: FreeCodeCamp Certified</li>
         <li>Front End Development Libraries: FreeCodeCamp Certified</li>
+        <br />
         <li>100x Devs Cohort 2.0: MERN, System Design, Basic DevOps</li>
       </ul>
     ),

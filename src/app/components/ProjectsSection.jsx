@@ -12,7 +12,7 @@ const projectsData = [
       "This Portfolio website built with NextJS, TailwindCSS and EmailJS",
     image: "/images/projects/01.jpg",
     stack: ["NextJS", "TailwindCSS", "Framer-Motion"],
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "https://github.com/burhaann/Portfolio/",
     previewUrl: "https://burhaann.vercel.app",
   },
@@ -23,7 +23,7 @@ const projectsData = [
       "Discover and Share Ai Prompts. MongoDB Atlas CRUD App with O Auth 2.0 Authentication!",
     image: "/images/projects/02.jpg",
     stack: ["NextJS", "MongoDB", "TailwindCSS"],
-    tag: ["All", "Web"],
+    tag: ["All", "Fullstack"],
     gitUrl: "https://github.com/burhaann/promptopia/",
     previewUrl: "https://promptopia-gules-six.vercel.app/",
   },
@@ -34,7 +34,7 @@ const projectsData = [
       "ProShop, an E-Commerce platform with Admin Dashboard built using MERN Stack, Bootstrap and Redux toolkit!",
     image: "/images/projects/03.jpg",
     stack: ["MERN", "Bootstrap", "Redux Toolkit"],
-    tag: ["All", "Web"],
+    tag: ["All", "Fullstack"],
     gitUrl: "https://github.com/burhaann/Ecommerce-Shop",
     previewUrl: "https://proshop-vcso.onrender.com",
   },
@@ -69,7 +69,7 @@ const projectsData = [
       "Random Roofs generates a random 3D Model of a house everytime we visit it.",
     image: "/images/projects/06.jpg",
     stack: ["ThreeJS", "Blender"],
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "https://github.com/burhaann/Random-Roofs-3D-Website-Using-ThreeJS",
     previewUrl: "http://randomroofs.netlify.app/",
   },
@@ -142,7 +142,7 @@ const projectsData = [
       "Responsive Web Design: FreeCodeCamp Certified: 20 Projects in total!",
     image: "/images/projects/13.jpg",
     stack: ["HTML", "CSS"],
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "https://github.com/burhaann/Freecodecamp-Responsive-Web-Design",
     previewUrl: "https://responsive-webdesign-fcc.netlify.app/",
   },
@@ -152,7 +152,7 @@ const projectsData = [
     description: "Basic Meme Generator using React from Scrimba Course.",
     image: "/images/projects/14.jpg",
     stack: ["ReactJS", "JavaScript"],
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "https://github.com/burhaann/Scrimba-React-Meme-Generator",
     previewUrl: "https://react-meme-generator-scrimba.netlify.app/",
   },
@@ -162,7 +162,7 @@ const projectsData = [
     description: "Fullstack NextJS Blog, with proper Authentication.",
     image: "/images/projects/15.jpg",
     stack: ["NextJS", "MongoDB"],
-    tag: ["All", "Web"],
+    tag: ["All", "Fullstack"],
     gitUrl: "https://github.com/burhaann/Fullstack-Blog-NextJS",
     previewUrl: "https://fullstack-blog-next-js.vercel.app/",
   },
@@ -173,7 +173,7 @@ const projectsData = [
       "Brad Traversy: 50 Projects In 50 Days Course - HTML, CSS & JavaScript.",
     image: "/images/projects/16.jpg",
     stack: ["HTML", "CSS", "JavaScript"],
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "https://github.com/burhaann/50Projects-50Days-HTML-CSS-Javascript",
     previewUrl: "https://50projects-html-css-js.netlify.app/",
   },
@@ -183,7 +183,7 @@ const projectsData = [
     description: "Basic AirBNB Homepage Clone using React from Scrimba Course",
     image: "/images/projects/17.jpg",
     stack: ["ReactJS", "Javascript"],
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "https://github.com/burhaann/Scrimba-React-Airbnb-Clone",
     previewUrl: "https://react-airbnb-clone-scrimba.netlify.app/",
   },
@@ -194,7 +194,7 @@ const projectsData = [
       "5 Certification Projects, which included lessons from Bootstrap, SASS, jQuery, React and Redux.",
     image: "/images/projects/18.jpg",
     stack: ["ReactJS", "Bootstrap", "jQuery"],
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl:
       "https://github.com/burhaann/Freecodecamp-Front-End-Development-Libraries",
     previewUrl: "https://front-end-development.netlify.app",
@@ -206,7 +206,7 @@ const projectsData = [
       "React Markdown Notes app using firebase for storage from Scrimba React Course",
     image: "/images/projects/19.jpg",
     stack: ["ReactJS", "Javascript", "Firebase"],
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "https://github.com/burhaann/Scrimba-React-Markdown-Notes-App",
     previewUrl: "https://notes-using-firebase.netlify.app/",
   },
@@ -217,7 +217,7 @@ const projectsData = [
       "Tenzies is a fast-paced dice game where players aim to roll all ten of their dice to the same number as quickly as possible.",
     image: "/images/projects/20.jpg",
     stack: ["ReactJS", "Javascript"],
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "https://github.com/burhaann/Scrimba-React-Tenzies-Game",
     previewUrl: "https://tenzies-game-using-react-18.netlify.app/",
   },
@@ -254,8 +254,13 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="Fullstack"
+          isSelected={tag === "Fullstack"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Frontend"
+          isSelected={tag === "Frontend"}
         />
         <ProjectTag
           onClick={handleTagChange}
