@@ -221,6 +221,17 @@ const projectsData = [
     gitUrl: "https://github.com/burhaann/Scrimba-React-Tenzies-Game",
     previewUrl: "https://tenzies-game-using-react-18.netlify.app/",
   },
+  {
+    id: 21,
+    title: "Multiplayer Gun Battle Game with Audio and Text Chat",
+    description:
+      "Multiplayer Gun Battle Game using React Three Fiber with Audio and Text Chat using Socket IO and Express on Node JS backend",
+    image: "/images/projects/21.jpg",
+    stack: ["React Three Fiber", "SocketIO", "Express"],
+    tag: ["All", "Fullstack"],
+    gitUrl: "https://github.com/burhaann/College-10th-Semester-Major-Project-Lal-Chowk-Gun-Battle",
+    previewUrl: "https://college-10th-semester-major-project-lal.onrender.com/",
+  },
 ];
 
 const ProjectsSection = () => {
