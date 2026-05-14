@@ -295,11 +295,13 @@ const ProjectsSection = () => {
       >
         {filteredProjects.map((project, index) => (
           <motion.li
-            key={index}
+            key={project.id}
             variants={cardVariants}
             initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.2, delay: index * 0.3 }}
+            whileInView="animate"
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.4, delay: (index % 3) * 0.15 }}
+            className="h-full"
           >
             <ProjectCard
               key={project.id}

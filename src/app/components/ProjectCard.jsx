@@ -43,9 +43,9 @@ const ProjectCard = ({
   //   return `border-${colors[randomIndex]}-600`; // Construct the Tailwind CSS class
   // };
   return (
-    <div>
+    <div className="h-full flex flex-col">
       <div
-        className="h-52 md:h-72 rounded-t-xl relative group"
+        className="h-52 md:h-72 rounded-t-xl relative group shrink-0"
         style={{
           background: `url(${imgUrl})`,
           backgroundSize: "cover",
@@ -67,7 +67,7 @@ const ProjectCard = ({
           </Link>
         </div>
       </div>
-      <div className="bg-[#1c1b23]">
+      <div className="bg-[#1c1b23] flex-grow flex flex-col rounded-b-xl">
         <div className="flex flex-wrap justify-center pt-2">
           {stack &&
             stack.map((item, index) => {
@@ -91,7 +91,7 @@ const ProjectCard = ({
               );
             })}
         </div>
-        <div className="text-white rounded-b-xl py-4 px-4">
+        <div className="text-white py-4 px-4 flex-grow">
           <h5 className="text-xl font-semibold mb-2">{title}</h5>
           <p className="text-[#ADB7BE]">{description}</p>
         </div>
