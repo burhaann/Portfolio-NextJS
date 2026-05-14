@@ -130,23 +130,30 @@ const ExperienceSection = () => {
                 {/* Group Text */}
                 <span className="text-white ml-[0.35rem] align-bottom inline-block">Group</span>
               </h4>
-              <div className="inline-flex items-center bg-[#181818]/80 backdrop-blur-md border border-[#33353F] text-[#ADB7BE] px-6 py-3 rounded-full text-sm md:text-base font-semibold shadow-inner">
-                <svg
-                  className="w-5 h-5 mr-2 text-primary-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
-                {experienceData.startDate} - Present{" "}
-                {duration ? `· ${duration}` : ""}
+              <div className="inline-flex flex-wrap justify-center items-center bg-[#181818]/80 backdrop-blur-md border border-[#33353F] text-[#ADB7BE] px-5 py-3 rounded-3xl md:rounded-full text-sm md:text-base font-semibold shadow-inner text-center gap-y-1">
+                <span className="flex items-center whitespace-nowrap">
+                  <svg
+                    className="w-5 h-5 mr-2 text-primary-500 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  {experienceData.startDate} - Present
+                </span>
+                {duration && (
+                  <span className="whitespace-nowrap ml-1 md:ml-1.5 text-primary-400">
+                    <span className="hidden md:inline mr-1.5 text-[#ADB7BE]">·</span>
+                    {duration}
+                  </span>
+                )}
               </div>
             </div>
 
