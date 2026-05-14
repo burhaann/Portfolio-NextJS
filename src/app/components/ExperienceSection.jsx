@@ -93,32 +93,42 @@ const ExperienceSection = () => {
                   {experienceData.subtitle}
                 </div>
               </div>
-              <h4 className="flex justify-center items-center text-xl md:text-2xl font-bold mb-6">
-                <Image
-                  src="/images/google-logo.svg"
-                  alt="Google Logo"
-                  title="Google Logo"
-                  width={28}
-                  height={28}
-                  className="drop-shadow-md cursor-pointer mr-[1px]"
-                />
-                <span className="mr-2 flex">
+              <h4 className="text-center text-xl md:text-2xl font-bold mb-6 leading-[2rem]">
+                {/* Google block */}
+                <span className="whitespace-nowrap inline-flex items-center align-bottom">
+                  <Image
+                    src="/images/google-logo.svg"
+                    alt="Google Logo"
+                    title="Google Logo"
+                    width={28}
+                    height={28}
+                    className="drop-shadow-md cursor-pointer mr-[1px]"
+                  />
                   <span className="text-[#EA4335]">o</span>
                   <span className="text-[#FBBC05]">o</span>
                   <span className="text-[#4285F4]">g</span>
                   <span className="text-[#34A853]">l</span>
                   <span className="text-[#EA4335]">e</span>
-                  <span className="text-[#ADB7BE] ml-2 font-medium">via</span>
                 </span>
-                <Image
-                  src="/images/qualitest-logo.svg"
-                  alt="Qualitest Logo"
-                  title="Qualitest Group Logo"
-                  width={28}
-                  height={28}
-                  className="drop-shadow-md cursor-pointer mr-[1px]"
-                />
-                <span className="text-white">ualitest Group</span>
+                
+                {/* Via Text */}
+                <span className="text-[#ADB7BE] font-medium mx-1 align-bottom">via</span>
+                
+                {/* Qualitest block */}
+                <span className="whitespace-nowrap inline-flex items-center align-bottom">
+                  <Image
+                    src="/images/qualitest-logo.svg"
+                    alt="Qualitest Logo"
+                    title="Qualitest Group Logo"
+                    width={28}
+                    height={28}
+                    className="drop-shadow-md cursor-pointer mr-[1px]"
+                  />
+                  <span className="text-white">ualitest</span>
+                </span>
+                
+                {/* Group Text */}
+                <span className="text-white ml-[0.35rem] align-bottom inline-block">Group</span>
               </h4>
               <div className="inline-flex items-center bg-[#181818]/80 backdrop-blur-md border border-[#33353F] text-[#ADB7BE] px-6 py-3 rounded-full text-sm md:text-base font-semibold shadow-inner">
                 <svg
