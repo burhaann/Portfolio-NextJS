@@ -12,6 +12,7 @@ const TAB_DATA = [
         <li>HTML</li>
         <li>CSS</li>
         <li>Javascript</li>
+        <li>Google Apps Script</li>
         <li>React</li>
         <li>Redux</li>
         <li>NextJS</li>
