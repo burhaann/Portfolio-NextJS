@@ -7,6 +7,27 @@ const ExperienceSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const [duration, setDuration] = useState("");
+  const [showPastExperience, setShowPastExperience] = useState(false);
+
+  const pastExperiences = [
+    {
+      role: "Credit Card Counsellor",
+      company: "WISHFIN.COM",
+      logo: "/images/wishfin-logo.png",
+      duration: "Feb 2025 - Aug 2025",
+      description: []
+    },
+    {
+      role: "Junior IT Recruiter",
+      company: "Aquest Staffing",
+      logo: "/images/aquest-logo.png",
+      duration: "Sep 2024 - Oct 2024",
+      description: [
+        "Worked in the US IT Recruitment process.",
+        "Moved on from the role as the night shift schedule and 3 hours of daily travel were not sustainable in the long run."
+      ]
+    }
+  ];
 
   useEffect(() => {
     // Calculate dynamic duration from August 2025 to Present
@@ -76,7 +97,7 @@ const ExperienceSection = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.6 }}
-          className="bg-gradient-to-b from-[#1c1b23] to-[#121212] rounded-3xl p-8 md:p-12 border border-[#33353F] shadow-2xl relative overflow-hidden"
+          className="bg-gradient-to-b from-[#1c1b23] to-[#121212] rounded-3xl p-5 md:p-12 border border-[#33353F] shadow-2xl relative overflow-hidden"
         >
           {/* Subtle background ambient glows */}
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary-500 rounded-full blur-[120px] opacity-10 pointer-events-none"></div>
@@ -158,21 +179,21 @@ const ExperienceSection = () => {
             </div>
 
             {/* Creative Grid for Bullets */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
               {experienceData.description.map((desc, i) => (
                 <motion.div
                   key={i}
                   whileHover={{ scale: 1.02, y: -2 }}
-                  className="relative bg-[#181818]/60 backdrop-blur-lg p-6 rounded-2xl border border-[#33353F] hover:border-gray-500 transition-all duration-300 group overflow-hidden shadow-md"
+                  className="relative bg-[#181818]/60 backdrop-blur-lg p-4 md:p-6 rounded-2xl border border-[#33353F] hover:border-gray-500 transition-all duration-300 group overflow-hidden shadow-md"
                 >
                   {/* Top glowing accent line */}
                   <div
                     className={`absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r ${gradientColors[i % gradientColors.length]} opacity-60 group-hover:opacity-100 transition-opacity`}
                   ></div>
 
-                  <div className="mt-2 block md:flex md:items-start">
+                  <div className="mt-1 md:mt-2 flex items-start">
                     <span
-                      className={`inline-flex flex-shrink-0 w-6 h-6 md:w-10 md:h-10 rounded-md md:rounded-xl items-center justify-center mr-3 md:mr-4 bg-gradient-to-br ${gradientColors[i % gradientColors.length]} text-white shadow-lg shadow-black/50 transform group-hover:rotate-6 transition-transform duration-300 align-middle`}
+                      className={`inline-flex flex-shrink-0 w-6 h-6 md:w-10 md:h-10 rounded-md md:rounded-xl items-center justify-center mr-3 md:mr-4 bg-gradient-to-br ${gradientColors[i % gradientColors.length]} text-white shadow-lg shadow-black/50 transform group-hover:rotate-6 transition-transform duration-300 mt-0.5 md:mt-0`}
                     >
                       <svg
                         className="w-3.5 h-3.5 md:w-5 md:h-5"
@@ -189,7 +210,7 @@ const ExperienceSection = () => {
                         />
                       </svg>
                     </span>
-                    <span className="text-[#ADB7BE] text-base md:text-lg leading-relaxed group-hover:text-white transition-colors duration-300 align-middle md:mt-0">
+                    <span className="text-[#ADB7BE] text-base md:text-lg leading-relaxed group-hover:text-white transition-colors duration-300">
                       {desc}
                     </span>
                   </div>
@@ -198,6 +219,101 @@ const ExperienceSection = () => {
             </div>
           </div>
         </motion.div>
+
+        {/* Button to Toggle Past Experience */}
+        <div className="mt-8 flex justify-center">
+          <div className="relative group">
+            <button
+              onClick={() => setShowPastExperience(!showPastExperience)}
+              className="p-3 rounded-full bg-[#181818]/80 backdrop-blur-md border border-[#33353F] text-white hover:bg-[#2a2a35] hover:border-primary-500 transition-all duration-300 flex items-center justify-center shadow-lg w-12 h-12"
+              aria-label={showPastExperience ? "Hide Past Work Experience" : "Show Past Work Experience"}
+            >
+              <svg
+                className={`w-6 h-6 transition-transform duration-300 ${showPastExperience ? "rotate-180" : ""}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1.5 bg-[#23232b] border border-[#33353F] text-[#ADB7BE] text-xs font-semibold rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none z-50 shadow-xl">
+              {showPastExperience ? "Hide Past Work Experience" : "Show Past Work Experience"}
+            </div>
+          </div>
+        </div>
+
+        {/* Past Experience Details */}
+        {showPastExperience && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            transition={{ duration: 0.5 }}
+            className="mt-6 space-y-6 overflow-hidden"
+          >
+            {pastExperiences.map((exp, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                className="bg-gradient-to-b from-[#1c1b23] to-[#121212] p-6 md:p-8 rounded-3xl border border-[#33353F] shadow-lg relative"
+              >
+                <div className="flex flex-col md:flex-row md:items-center justify-between mb-2 md:mb-4 gap-3 md:gap-4">
+                  <div className="flex items-center gap-4">
+                    {exp.logo && (
+                      <div className="flex-shrink-0 w-12 h-12 bg-white rounded-full p-2 flex items-center justify-center overflow-hidden border border-[#33353F]">
+                        <Image
+                          src={exp.logo}
+                          alt={`${exp.company} logo`}
+                          width={32}
+                          height={32}
+                          className="object-contain"
+                        />
+                      </div>
+                    )}
+                    <div>
+                      <h3 className="text-xl md:text-2xl font-bold text-white">{exp.role}</h3>
+                      <div className="text-base md:text-lg text-primary-400 font-semibold mt-1">
+                        {exp.company}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="text-[#ADB7BE] text-sm md:text-base font-medium flex items-center bg-[#181818] border border-[#33353F] px-4 py-2 rounded-full w-fit shrink-0">
+                    <svg
+                      className="w-4 h-4 mr-2 text-primary-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      />
+                    </svg>
+                    {exp.duration}
+                  </div>
+                </div>
+                {exp.description && exp.description.length > 0 && (
+                  <ul className="list-none space-y-3 mt-4 text-[#ADB7BE]">
+                    {exp.description.map((desc, i) => (
+                      <li key={i} className="flex items-start">
+                        <span className="text-primary-500 mr-3 mt-1.5 shrink-0">
+                          <svg className="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 8 8">
+                            <circle cx="4" cy="4" r="3" />
+                          </svg>
+                        </span>
+                        <span className="text-sm md:text-base leading-relaxed">{desc}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </motion.div>
+            ))}
+          </motion.div>
+        )}
       </div>
     </section>
   );
